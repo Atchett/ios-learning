@@ -18,9 +18,11 @@ class ViewController: UIViewController {
     @IBAction func guessClick(sender: AnyObject) {
     
         // get a random number
-        let rndNumber:Int = Int(arc4random_uniform(5) + 1)
+        // convert to a string for comparrison
+        let rndNumber:String = String(arc4random_uniform(5) + 1)
         // get the guessed number
-        let iGuessed = Int(numberGuess.text!)!
+        // it's a string already and even if blank will not error
+        let iGuessed = numberGuess.text
         
         if iGuessed == rndNumber {
             guessImg.image = UIImage(named: "good.jpg")
