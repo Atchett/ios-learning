@@ -27,8 +27,12 @@ class ViewController: UIViewController {
         if iGuessed == rndNumber {
             guessImg.image = UIImage(named: "good.jpg")
         } else {
-            guessImg.image = UIImage(named: "bad.jpg")
-            lblAnswer.text = "Answer was : \(rndNumber)"
+            if iGuessed == "" {
+                lblAnswer.text = "Please enter a number"
+            } else {
+                guessImg.image = UIImage(named: "bad.jpg")
+                lblAnswer.text = "Answer was : \(rndNumber)"
+            }
         }
         
         guessButton.hidden = true
