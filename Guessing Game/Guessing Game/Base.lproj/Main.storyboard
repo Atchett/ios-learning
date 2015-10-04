@@ -35,6 +35,14 @@
                                 <rect key="frame" x="20" y="202" width="335" height="269"/>
                                 <animations/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yak-VW-HB9">
+                                <rect key="frame" x="156" y="479" width="63" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Try again"/>
+                                <connections>
+                                    <action selector="tryAgainClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2VX-Ct-hUn"/>
+                                </connections>
+                            </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9EI-I3-OP6">
                                 <rect key="frame" x="139" y="107" width="97" height="30"/>
                                 <animations/>
@@ -47,6 +55,7 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="guessImg" destination="Jfl-uQ-H6W" id="Vpx-Ay-UFK"/>
                         <outlet property="numberGuess" destination="9EI-I3-OP6" id="Ew4-xJ-DJH"/>
                     </connections>
                 </viewController>

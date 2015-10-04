@@ -12,9 +12,19 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var numberGuess: UITextField!
     
+    @IBOutlet weak var guessImg: UIImageView!
+    
     @IBAction func guessClick(sender: AnyObject) {
+    
+        
         
     }
+    
+    @IBAction func tryAgainClick(sender: AnyObject) {
+    
+    
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
